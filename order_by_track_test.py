@@ -1,3 +1,4 @@
+#Юлия Костюк, 11 когорта, - Финальный проект QA
 import sender_stand_request
 
 
