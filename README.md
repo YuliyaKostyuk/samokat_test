@@ -1,6 +1,7 @@
-﻿# Задание 1
+﻿# Часть 1. Запросы SQL 
+# Задание 1
 SELECT c.login, 
-COUNT(o."inDelivery") 
+COUNT(*) AS OrdersCount
 FROM "Couriers" AS C 
 INNER JOIN "Orders" AS O ON c.id=o."courierId" 
 WHERE o."inDelivery"=true 
@@ -15,3 +16,7 @@ WHEN "inDelivery" = true THEN 1
 ELSE 0 
 END AS status 
 FROM "Orders";
+
+# Часть 2. Автоматизация теста к API
+# Для запуска тестов должны быть установлены пакеты pytest и requests. 
+# Запуск всех тестов выполняется командой pytest.
